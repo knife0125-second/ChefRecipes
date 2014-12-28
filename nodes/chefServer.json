@@ -7,7 +7,8 @@
     "recipe[yum-remi]",
     "tmux",
     "bash-completion",
-    "apache"
+    "apache",
+    "stop-iptables"
   ],
   "automatic": {
     "ipaddress": "chefServer"
