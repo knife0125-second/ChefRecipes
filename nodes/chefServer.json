@@ -5,7 +5,8 @@
     "basicInstallation",
     "recipe[yum-epel]",
     "recipe[yum-remi]",
-    "tmux"
+    "tmux",
+    "bash-completion"
   ],
   "automatic": {
     "ipaddress": "chefServer"
