@@ -20,3 +20,12 @@ packages.each do |p|
         options "--enablerepo=remi,remi-php55"
     end
 end
+
+template "php.ini" do
+    owner "root"
+    group "root"
+    mode 0644
+    path "/etc/php.ini"
+    source "php.ini.erb"
+    notifies :restart, 'service[httpd]'
+end
