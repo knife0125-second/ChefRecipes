@@ -21,7 +21,7 @@ installPackages = %w(openssl-devel
                      perl-ExtUtils-Embed
                      w3m
                      wget
-                     vim
+                     vim-enhanced
                      bind-utils
                     )
 
