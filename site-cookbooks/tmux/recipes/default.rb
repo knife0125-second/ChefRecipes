@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: yumupdate
+# Cookbook Name:: tmux
 # Recipe:: default
 #
 # Copyright 2014, YOUR_COMPANY_NAME
@@ -7,8 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-execute "yumupdate" do
-    user "root"
-    command "yum update -y"
-    action :run
+package "tmux" do
+    action :install
+    options "--enablerepo=epel"
 end
