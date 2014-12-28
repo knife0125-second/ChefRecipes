@@ -6,7 +6,8 @@
     "recipe[yum-epel]",
     "recipe[yum-remi]",
     "tmux",
-    "bash-completion"
+    "bash-completion",
+    "apache"
   ],
   "automatic": {
     "ipaddress": "chefServer"
