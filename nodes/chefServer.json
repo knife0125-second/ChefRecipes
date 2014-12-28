@@ -1,6 +1,8 @@
 {
   "run_list": [
-
+    "yumupdate",
+    "installDevelopmentTools",
+    "basicInstallation"
   ],
   "automatic": {
     "ipaddress": "chefServer"
