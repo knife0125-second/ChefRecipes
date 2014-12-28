@@ -8,7 +8,8 @@
     "tmux",
     "bash-completion",
     "apache",
-    "stop-iptables"
+    "stop-iptables",
+    "recipe[selinux::disabled]"
   ],
   "automatic": {
     "ipaddress": "chefServer"

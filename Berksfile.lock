@@ -1,8 +1,10 @@
 DEPENDENCIES
+  selinux
   yum-epel
   yum-remi
 
 GRAPH
+  selinux (0.8.0)
   yum (3.5.2)
   yum-epel (0.5.3)
     yum (~> 3.0)
