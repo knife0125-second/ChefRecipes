@@ -9,6 +9,7 @@
     "bash-completion",
     "apache",
     "mysql",
+    "php",
     "stop-iptables",
     "recipe[selinux::disabled]"
   ],
