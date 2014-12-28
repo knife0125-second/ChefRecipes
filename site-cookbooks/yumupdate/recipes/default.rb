@@ -6,3 +6,9 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+execute "yum-update" do
+    user "root"
+    command "yum update -y"
+    action :run
+end
