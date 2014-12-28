@@ -2,7 +2,9 @@
   "run_list": [
     "yumupdate",
     "installDevelopmentTools",
-    "basicInstallation"
+    "basicInstallation",
+    "recipe[yum-epel]",
+    "recipe[yum-remi]"
   ],
   "automatic": {
     "ipaddress": "chefServer"
