@@ -18,3 +18,12 @@ end
 service "httpd" do
     action [:enable, :start]
 end
+
+template "httpd.conf" do
+    owner "root"
+    group "root"
+    mode 0644
+    path "/etc/httpd/conf/httpd.conf"
+    source "httpd.conf.erb"
+    notifies :restart, 'service[httpd]'
+end
