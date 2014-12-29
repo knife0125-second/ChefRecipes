@@ -1,0 +1,20 @@
+{
+  "run_list": [
+    "yumupdate",
+    "installDevelopmentTools",
+    "basicInstallation",
+    "recipe[yum-epel]",
+    "recipe[yum-remi]",
+    "tmux",
+    "bash-completion",
+    "apache",
+    "mysql",
+    "php",
+    "rbenv-ruby",
+    "stop-iptables",
+    "recipe[selinux::disabled]"
+  ],
+  "automatic": {
+    "ipaddress": "testChef"
+  }
+}
